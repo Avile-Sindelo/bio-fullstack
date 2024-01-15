@@ -25,9 +25,10 @@ app.use(bodyParser.json());
 
 
 //Routes
-app.get('/', async function(){
+app.get('/', async function(req, res){
     //Get the database details 
     //Render a view
+    res.render('index');
 });
 
 let PORT = process.env.PORT || 8080;
