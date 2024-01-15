@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Cinzel&family=Courgette&family=Dancing+Script:wght@600&family=Faster+One&family=Frijole&family=Kalam&family=Londrina+Sketch&family=Nanum+Gothic&family=Poppins&family=Raleway+Dots&family=Rubik+Dirt&family=Rubik+Iso&family=Rubik+Puddles&family=Smokum&family=Stick+No+Bills:wght@300;500&family=Tilt+Prism&family=Vast+Shadow&family=Ysabeau+Office:ital,wght@1,300&family=Ysabeau+SC:wght@200&display=swap');
+body{
+    background-color: beige;
+    color: #333;
+}
+
+p{
+    font-family: 'Poppins', curive;
+    padding: 3%;
+}
+
+div{
+    color: bisque;
+}
+
+label{
+    min-width: 100px;
+    min-height: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+progress{
+    padding: 2% 5%;
+    margin: 0 0 0 5%;
+    font-size: 85%;
+}
+
+legend{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   padding: 1% 0;
+}
+
+a{
+    color: blue;
+    font-family: sans-serif;
+}
+
+li{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bolder;
+    list-style-type: square;
+}
+
+input{
+    padding: 3% 5%;
+}
+
+input, textarea{
+    border-radius: 17px;
+    border: none
+}
+
+#intro{
+    background-image: url('images/bg4.PNG');
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    background-position: center center;
+    padding: 5%;
+}
+
+#about{
+    background-color: #45969B;
+    width: 100%;
+}
+
+#hello-world{
+    text-align: center;
+    font-family: 'Rubik Iso', cursive;
+    font-size: 130%;
+    font-weight: bolder;
+    color: #45969B;
+    margin-top: 0;
+    padding-top: 0;
+    animation-delay: 1.1s;
+}
+
+#i-am{
+    text-align: center;
+    font-size: 130%;
+    font-weight: 600;
+    font-family: 'Tilt Prism', cursive;
+    margin-top: 0;
+    padding-top: 0;
+    animation-delay: 2s;
+    color: #45969B;
+}
+
+.name{
+    text-align: center;
+    word-spacing: 4px;
+    font-weight: 600;
+    font-family: 'Frijole', cursive;
+    font-size: 200%;
+    animation-delay: 2.5s;
+    padding: 0;
+}
+
+.form{
+    border-radius: 5px;
+    padding: 5% 7%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-heading{
+    font-family: 'Londrina Sketch', sans-serif;
+}
+
+.each-contact-detail{
+    margin: 5% 0;
+    padding: 4% 0;
+}
+
+.icon{
+    margin: 0 5% 0 0;
+}
+
+#contact-message{
+    height: 7em;
+    padding: 3% 5%;
+    width: 62%;
+}
+
+#contact-details{
+    padding: 0 3%;
+    margin: 0;
+}
+
+#contact-form{
+    background-color: #45969B;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.contact-input{
+    border-radius: 20px;
+    border: none;
+    margin: 0 2%;
+    padding: 2% 5%;
+    box-shadow: 1px 1px 3px grey inset;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#web-dev-span{
+    margin: 0 0 0 40%;
+    color: #FF8551;
+    background-color: #9BCDD2;
+    padding: .7% 3%;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    opacity: .7;
+    font-family: 'Rubik Dirt', cursive;
+    animation-duration: 3s;
+    animation-delay: 3.5s;
+}
+
+#image{
+    width: 90%;
+    height: 50vh;
+    border-radius: 50%;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding: 1.5%;
+    margin: 20% 0 0 0;
+    box-shadow: 2px 2px 15px black;
+    background-color: #A2B5BB;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+#typed-element{
+    color: crimson;
+    font-family: 'Caprasimo', cursive;
+    font-size: 120%;
+    text-shadow: .3px .3px 0px white;
+}
+
+.project-image{
+    width: 100%;
+    height: 30%;
+    box-shadow: 1px 1px 2px darkgrey;
+}
+
+.project-image:hover{
+    transform: scale(1.025);
+    transition: .5s ease-in-out;
+}
+
+.project-card{
+    background-color: #DEBACE;
+    border-radius: 2px;
+    padding: 3%;
+    border: 2px solid darkgrey;
+    box-shadow: 1px 0px 15px black;
+}
+
+.project-card:hover{
+    box-shadow: 1px 0px 15px lightseagreen;
+    transition: 1s ease;
+}
+
+.project-heading{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project-text{
+    font-size: 85%;
+}
+
+#project-header{
+    text-align: center;
+    color: lightgrey;
+}
+
+.technical-skills{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#submitBtn{
+    margin: 5% 0 10% 25%;
+    padding: 2% 10%;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 1px 1px 5px grey;
+    font-family: 'Poppins', sans-serif;
+}
+
+#submitBtn:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 5px beige;
+}
+
+#full-name{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+#about-web-dev{
+    text-align: center;
+    text-transform: uppercase;
+    color: #A2B5BB;
+    font-family: cinzel, cursive;
+    animation-duration: 4s;
+    animation-delay: 3s
+}
+
+#descriptive-text{
+    text-align: center;
+    animation-delay: 2s;
+    animation-duration: 6s;
+}
+
+.fader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 2%;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    animation-duration: 3.5s;
+    animation-delay: 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+   
+}
+
+.skillset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.each-skill{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#skills{
+    background-color: #FF6B6B;
+    width: 100%;
+}
+
+#my-skills-heading{
+    text-align: center;
+    margin-top: -10%;
+}
+
+#projects{
+    background-color: #1A4D2E;
+}
+
+#contact{
+    background-color: #FF9F29;
+}
+
+#education{
+    background-color: beige;
+}
+
+.edu-exp-heading{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
+@media screen AND (max-width: 350px){
+    #web-dev-span{
+        display: none;
+    }
+
+    #intro{
+        background-size: 100vh;
+    }
+
+    #about{
+        width: 100vw;
+    }
+
+    #image{
+        margin: 0 0 0 4%;
+    }
+}
