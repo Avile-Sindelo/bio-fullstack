@@ -5,7 +5,7 @@ import pgPromise from 'pg-promise';
 
 //Database connection
 //db string
-const connectionString = process.env.DATABASE_URL || 'postgres://iajdqtoo:CO2sgzM3PLzJcKZ-2vDspOHP-3vVMrYu@arjuna.db.elephantsql.com/iajdqtoo?ssl=true';
+const connectionString = process.env.DATABASE_URL || 'postgres://iajdqtoo:CO2sgzM3PLzJcKZ-2vDspOHP-3vVMrYu@arjuna.db.elephantsql.com/iajdqtoo';
 const postgresP = pgPromise(connectionString);
 
 const app = express();
