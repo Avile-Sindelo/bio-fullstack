@@ -3,12 +3,16 @@ import { engine } from 'express-handlebars';
 import bodyParser from 'body-parser';
 import pgPromise from 'pg-promise';
 
+const app = express();
+
 //Database connection
 //db string
-const connectionString = process.env.DATABASE_URL || 'postgres://iajdqtoo:CO2sgzM3PLzJcKZ-2vDspOHP-3vVMrYu@arjuna.db.elephantsql.com/iajdqtoo';
-const postgresP = pgPromise(connectionString);
+const connectionString = process.env.DATABASE_URL || 'postgres://iajdqtoo:CO2sgzM3PLzJcKZ-2vDspOHP-3vVMrYu@arjuna.db.elephantsql.com/iajdqtoo?ssl=true';
+const postgresP = pgPromise();
+const db = postgresP(connectionString);
 
-const app = express();
+console.log('Database', db);
+
 //View engine configuration
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
