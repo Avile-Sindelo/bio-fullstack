@@ -1,13 +1,13 @@
-<div id="intro" class="row">
-        <div class="col-12 hidden">
-            <p id="hello-world" class="animate__animated animate__heartBeat">Hello World, </p>
-            <p id="i-am" class="animate__animated animate__jackInTheBox">I'm</p>             
-            <p class="name animate__animated animate__rollIn">Avile Sindelo.</p>
-            <span id="web-dev-span" class="animate__animated animate__fadeInLeft">Web Developer</span>
-        </div> 
-    </div>
-    <div id="about" class="row">
-        <div class="col-7 hidden">
+<div id="intro" class="grid">
+    <div id="personal-details" class="col-4-12">
+        <p id="hello-world" class="animate__animated animate__heartBeat">Hello World, </p>
+        <p id="i-am" class="animate__animated animate__jackInTheBox">I'm</p>             
+        <p class="name animate__animated animate__rollIn">Avile Sindelo.</p>
+        <span id="web-dev-span" class="animate__animated animate__fadeInLeft">Web Developer</span>
+    </div> 
+</div>
+    <div id="about" class="grid">
+        <div class="col-9-12">
             <h2 id="full-name" class="animate__animated animate__bounceInLeft">Avile Sindelo</h2>
             <h4 id="about-web-dev" class="animate__animated animate__bounceInLeft">I'm a : <span id="typed-element"></span></h4>
 
@@ -19,10 +19,13 @@
                 From personal websites to small business solutions, I am eager to contribute my expertise and collaborate on exciting web development opportunities.
             </p>
         </div>
-        <div class="col-5 hidden">
+        <div class="col-3-12">
             <div id="image-div"><img id="image" class="animate__animated animate__rotateIn" src="images/avile.JPG"/></div>
         </div>
     </div>
+
+    {{!-- Skills --}}
+
     <div id="skills" class="fader"> 
         <div class="row">
             <div class="col-12">
@@ -32,85 +35,37 @@
         
         <div class="row">
             <!-- TECH -->
-            <div class="col-6 hidden skillset"> 
+            <div class="col-6  skillset"> 
                 <h3 class="technical-skills">Technical Skills</h3>
                 <!-- HTML -->
-                <div class="each-skill hidden">
-                    <label for="html">HTML</label>
-                    <progress class="progress" id="html" value="86" max="100"> 86% </progress>
-                </div>
-                <!-- CSS -->
-                <div class="each-skill hidden">
-                    <label for="css">CSS</label>
-                    <progress class="progress" id="css" value="70" max="100"> 70% </progress>
-                </div>
-                <!-- JS -->
-                <div class="each-skill hidden">
-                    <label for="js">JavaScript</label>
-                    <progress class="progress" id="javascript" value="80" max="100"> 80% </progress>
-                </div>
-                <!-- React -->
-                <div class="each-skill hidden">
-                    <label for="react">React</label>
-                    <progress class="progress" id="react" value="52" max="100"> 52% </progress>
-                </div>
-                <!-- Node -->
-                <div class="each-skill hidden">
-                    <label for="react">NodeJS</label>
-                    <progress class="progress" id="nodejs" value="24" max="100"> 24% </progress>
-                </div>
-                <!-- Express -->
-                <div class="each-skill hidden">
-                    <label for="express">ExpressJS</label>
-                    <progress class="progress" id="expressJS" value="24" max="100"> 24% </progress>
-                </div>
-                <!-- MongoDB -->
-                <div class="each-skill hidden">
-                    <label for="mongo">MongoDB</label>
-                    <progress class="progress" id="mongoDB" value="33" max="100"> 33% </progress>
-                </div>
-                <!-- SQL -->
-                <div class="each-skill hidden">
-                    <label for="sql">SQL</label>
-                    <progress class="progress" id="sql" value="60" max="100"> 60% </progress>
-                </div>
-                <!-- Git -->
-                <div class="each-skill hidden">
-                    <label for="git">Git</label>
-                    <progress class="progress" id="react" value="63" max="100"> 63% </progress>
-                </div>
-                <!-- Alpine -->
-                <div class="each-skill hidden">
-                    <label for="alpine">Alpine JS</label>
-                    <progress class="progress" id="alpine" value="40" max="100"> 40% </progress>
-                </div>
-                <!-- PostgreSQL -->
-                <div class="each-skill hidden">
-                    <label for="postgres">PostgreSQL</label>
-                    <progress class="progress" id="postgres" value="43" max="100"> 43% </progress>
-                </div>
+                {{#each skills}}
+                    <div class="each-skill">
+                        <label for="html">{{name}} - {{category}}</label>
+                        {{!-- <progress class="progress" id="html" value="{{ability_percentage}}" max="100"> {{ability_percentage}}% </progress> --}}
+                    </div>
+                {{/each}}
             </div>
             
             <!-- DESIGN -->
-            <div class="col-6 hidden skillset"> 
+            <div class="col-6 skillset"> 
                 <h3 class="technical-skills">Design Skills</h3>
                 <!-- UI/UX -->
-                <div class="each-skill hidden">
+                <div class="each-skill">
                     <label for="ui-ux">UI / UX</label>
                     <progress class="progress" id="ui-ux" value="86" max="100"> 86% </progress>
                 </div>
                 <!-- Web -->
-                <div class="each-skill hidden">
+                <div class="each-skill">
                     <label for="web-design">Web</label>
                     <progress class="progress" id="web-design" value="80" max="100"> 80% </progress>
                 </div>
                 <!-- Logo -->
-                <div class="each-skill hidden">
+                <div class="each-skill">
                     <label for="logo-design">Logo</label>
                     <progress class="progress" id="logo-design" value="82" max="100"> 82% </progress>
                 </div>
                 <!-- Figma -->
-                <div class="each-skill hidden">
+                <div class="each-skill">
                     <label for="figma-design">Figma</label>
                     <progress class="progress" id="figma-design" value="42" max="100"> 42% </progress>
                 </div>
@@ -120,20 +75,20 @@
     <!--- Education & Experience -->
     <div id="education" class="row">
         <div class="col-6">
-            <h3 class="edu-exp-heading hidden"> Education </h3>
-            <ul class="edu-exp-list hidden">
-                <li class="list-item">BSc Computer Science (WSU) -  in progress. </li>
-                <li class="list-item">Self-taught  :-  W3Schools, freeCodeCamp, CS50 , Edureka, GeeksForGeeks, Tulesko learnings, Traversy.com, WebDevSimplified, The Coding Train (2019 - current)</li>
+            <h3 class="edu-exp-heading"> Education </h3>
+            <ul class="edu-exp-list">
+                <li class="list-item black-text">BSc Computer Science (WSU) -  in progress. </li>
+                <li class="list-item black-text">Self-taught  :-  W3Schools, freeCodeCamp, CS50 , Edureka, GeeksForGeeks, Tulesko learnings, Traversy.com, WebDevSimplified, The Coding Train (2019 - current)</li>
                 <li class="list-item"><a href="https://freecodecamp.org/Avile_Kimson_Sindelo">freeCodeCamp certification </a></li>
-                <li class="list-item"><a href="#">codeX bootcamp certification - download</a></li>
+                <li class="list-item"><a href="../public/documents/2023 AWD codeX Certificate Avile Sindelo.pdf" download="2023 AWD codeX Certification Avile Sindelo.pdf">codeX agile web development certification - download</a></li>
             </ul>
         </div>
 
         <div class="col-6">
-            <h3 class="edu-exp-heading hidden"> Experience </h3>
-            <ul class="edu-exp-list hidden">
-                <li class="list-item">CodeX intern : Feb/2023 - Current </li>
-                <p style="font-size:80%; padding-top: 0;">
+            <h3 class="edu-exp-heading "> Experience </h3>
+            <ul class="edu-exp-list ">
+                <li class="black-text">CodeX intern : Feb/2023 - Current </li>
+                <p style="font-size:80%; padding-top: 0;" class="blact-text">
                     As an intern at CodeX, I plan small and medium scale software solutions on a Kanban board using the Thin-Slicing approach.</br>
                     Upon plan approval by mentors, I build the solution using the HTML, CSS and JS.</br>
                     Constantly communicate with mentors on regular intervals, and its prioritized. </br>
@@ -146,94 +101,27 @@
 
     <!-- Projects below -->
     <div id="projects">
-        <div class="row">
-            <h2 id="project-header" class="hidden section-heading"> My Projects </h2>
-            <div class="col-3 hidden ">
+        <div class="grid">
+            <h2 id="project-header" class=" section-heading"> My Projects </h2>
+            <div class="col-1-3">
                 <div class="project-card">
-                    <h3 class="project-heading"> Tic Tac Toe </h3>
-                    <img src="images/project1.png"  alt="project 1" class="project-image">
-                    <div class="project-description">
-                        <p class="project-text">
-                            Below is the link to the Tic Tac Toe game I built some time ago.
-                            It's the same old X and O game we used to play with a pen and pad growing up, 
-                            I just digitalized the old shandis.
-                            Click <a href="http://qicqacqoe.freevar.com">here</a> to open the game, find an opponent and have a little fun.
-                            Enjoy!
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-3 hidden ">
-                <div class="project-card">
-                    <h3 class="project-heading"> Pig Game </h3>
-                    <img src="images/project2.png" alt="project 2" class="project-image">
-                    <div class="project-description">
-                        <p class="project-text">
-                           This is another two-player game of dice.
-                           It is also an ancient game that has been played by people of all ages all over the world.
-                           
-                           Dice games are associated with gambling, but this one was built purely out of the love 
-                           for that cube and how we used to play so many games with it as kids.
-                            Click <a href="https://avile-sindelo.github.io/piggame/">here</a> to open the game, find an opponent and have a little fun.
-                            Enjoy!
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-3 hidden ">
-                <div class="project-card">
-                    <h3 class="project-heading"> Yo-Kulca Clothing </h3>
-                    <img src="images/project3.png" alt="project 3" class="project-image">
-                    <div class="project-description">
-                        <p class="project-text">
-                            A website for a clothing brand based in Mthatha, Eastern Cape. 
-                            100% black-owned fashionable clothing manufacturing company established in 2019 by Yonga Mahlamvu. 
-                            Click <a href="http://yokulca.freevar.com/index.html">here</a> and have a look at what the upcoming fashion giant has to offer and who it caters for, just to mention a few things.
-                            Enjoy!
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-3 hidden ">
-                <div class="project-card">
-                    <h3 class="project-heading"> Hospital appointments </h3>
-                    <img src="images/project5.png" class="project-image">
-                    <div class="project-description">
-                        <p class="project-text">
-                            This is an appointment booking for hospital patients without having them physically travel there to arrange a booking.
-                            Here, a patient enters their details and receive a QR by e-mail upon successfully making the booking, which you present at the hospital later.
-                            Click <a href="https://kaydrew.github.io/Hospital-Booking-App/">here</a> and see it works.
-                            Enjoy!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Row 2-->
-        <div class="row">
-            <div class="col-3 hidden">
-                <div class="project-card">
-                    <h3 class="project-heading"> Taxi Queue App </h3>
-                    <img src="images/project4.png" class="project-image">
-                    <div class="project-description">
-                        <p class="project-text">
-                            Taxi manangement system for 12-passengers taxis.
-                            Passengers can join and leave their queue as they please, but as soon as there are 12 passengers on the queue and there is a taxi in the taxi queue, 
-                            the taxi can depart with its passengers.
-                            Click <a href="https://avile-sindelo.github.io/taxi-queue-app/">here</a> see how it works - under continuous development.
-                            Enjoy!
-                        </p>
-                    </div>
+                    {{#each projects}}
+                        <h3 class="project-heading"> {{name}} </h3>
+                        <img src={{image_url}}  alt="project 1" class="project-image">
+                        <div class="project-description">
+                            <p class="project-text black-text"> 
+                               {{description}}
+                               <a href={{url}}>Open project</a>
+                            </p>
+                        </div>
+                    {{/each}}
                 </div>
             </div>
         </div>
     </div>    
 
     <div id="contact" class="fader">
-        <h2 class="hidden section-heading">Contact Me!</h2>
+        <h2 class=" section-heading">Contact Me!</h2>
         <div class="row">
             <div class="col-6" id="contact-details-div">
                 <div id="contact-details" class="hidden">
@@ -267,7 +155,7 @@
             </div>
 
             <div class="col-6" id="contact-form">
-                <div class="row hidden form">
+                <div class="row  form">
                     <div class="col-12">
                        <div class="row">
                         <div class="col-6">Full Name</div>
@@ -295,7 +183,7 @@
                         </div> 
                      </div>
                 </div>
-                <button id="submitBtn" class="hidden" onclick="sendMail()">Send email!</button>
+                <button id="submitBtn" onclick="sendMail()">Send email!</button>
             </div>
         </div>
     </div>

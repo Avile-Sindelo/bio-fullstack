@@ -53,19 +53,30 @@ input, textarea{
 }
 
 #intro{
-    background-image: url('images/bg4.PNG');
-    background-size: auto;
+    background-image: url('../images/bg4.PNG');
+    background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: whitesmoke;
-    background-position: center center;
+    /* background-position: center center; */
     padding: 5%;
+    margin: 5em 14em;
+    width: 100vw;
 }
 
 #about{
     background-color: #45969B;
-    width: 100%;
+    /* background-color: yellow; */
+    width: 100vw;
+    margin: 0;
 }
+
+/* #personal-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
 
 #hello-world{
     text-align: center;
@@ -196,6 +207,7 @@ input, textarea{
     padding: 3%;
     border: 2px solid darkgrey;
     box-shadow: 1px 0px 15px black;
+    margin: 2em 0;
 }
 
 .project-card:hover{
@@ -206,6 +218,7 @@ input, textarea{
 .project-heading{
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
 }
 
 .project-text{
@@ -295,6 +308,8 @@ input, textarea{
     display: flex;
     flex-direction: row;
     align-items: center;
+    border: 1px dashed grey;
+    padding: 1em 2em;
 }
 #skills{
     background-color: #FF6B6B;
@@ -322,6 +337,11 @@ input, textarea{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+    color: #333;
+}
+
+.list-item{
+    color: #333;
 }
 
 
@@ -332,7 +352,7 @@ input, textarea{
     }
 }
 
-@media screen AND (max-width: 350px){
+@media screen AND (max-width: 760px){
     #web-dev-span{
         display: none;
     }
