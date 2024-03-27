@@ -54,14 +54,14 @@ input, textarea{
 
 #intro{
     background-image: url('../images/bg4.PNG');
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: whitesmoke;
     /* background-position: center center; */
     padding: 5%;
-    margin: 5em 14em;
-    width: 100vw;
+    margin: 0;
+    width: 100%;
 }
 
 #about{
@@ -118,6 +118,7 @@ input, textarea{
 
 .section-heading{
     font-family: 'Londrina Sketch', sans-serif;
+    text-align: center;
 }
 
 .each-contact-detail{
@@ -342,6 +343,13 @@ input, textarea{
 
 .list-item{
     color: #333;
+}
+
+.row-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 
