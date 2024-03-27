@@ -160,10 +160,11 @@ input, textarea{
 #web-dev-span{
     margin: 0 0 0 40%;
     color: #FF8551;
-    background-color: #9BCDD2;
+    background-color: transparent;
     padding: .7% 3%;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    /* border: .1px solid #333; */
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
     opacity: .7;
     font-family: 'Rubik Dirt', cursive;
     animation-duration: 3s;
