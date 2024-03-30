@@ -403,6 +403,7 @@ input, textarea{
     .project-card{
         height: fit-content;
         margin: 0 2em;
+        margin: 1em .3em;
     }
 
     #projects{
