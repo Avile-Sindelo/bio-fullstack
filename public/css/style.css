@@ -210,7 +210,9 @@ input, textarea{
     padding: 3%;
     border: 2px solid darkgrey;
     box-shadow: 1px 0px 15px black;
-    margin: 2em 0;
+    margin: 2em;
+    height: fit-content;
+    width: 100vw;
 }
 
 .project-card:hover{
@@ -377,5 +379,14 @@ input, textarea{
 
     #image{
         margin: 0 0 0 4%;
+    }
+
+    .project-card{
+        height: fit-content;
+        margin: 0 2em;
+    }
+
+    #projects{
+        flex-direction: column;
     }
 }
