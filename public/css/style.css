@@ -108,6 +108,7 @@ input, textarea{
     font-size: 200%;
     animation-delay: 2.5s;
     padding: 0;
+    text-shadow: 1px 1px 1px #fff;
 }
 
 .form{
