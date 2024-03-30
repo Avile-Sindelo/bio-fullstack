@@ -66,10 +66,10 @@ input, textarea{
 
 #about{
     background-color: #45969B;
-    background-image: url('../images/backend-development.jpg');
+    /* background-image: url('../images/bg5.png'); */
     background-size: contain;
     /* background-color: yellow; */
-    text-shadow: 1.5px .5px khaki;
+    text-shadow: .1px .1px crimson;
     width: 100vw;
     margin: 0;
 }
