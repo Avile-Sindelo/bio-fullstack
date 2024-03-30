@@ -66,7 +66,10 @@ input, textarea{
 
 #about{
     background-color: #45969B;
+    background-image: url('../images/backend-development.jpg');
+    background-size: contain;
     /* background-color: yellow; */
+    text-shadow: 1.5px .5px khaki;
     width: 100vw;
     margin: 0;
 }
@@ -120,6 +123,8 @@ input, textarea{
 .section-heading{
     font-family: 'Londrina Sketch', sans-serif;
     text-align: center;
+    color: beige;
+    text-shadow: 1px 1px 1px #333;
 }
 
 .each-contact-detail{
@@ -371,10 +376,23 @@ input, textarea{
 
     #intro{
         background-size: 100vh;
+        width: 120vw;
     }
 
+    #skills{
+        width: 120vw;
+    }
+    
+    #projects{
+        width: 120vw;
+    }
+
+    #contact{
+        width: 120vw;
+    }
+    
     #about{
-        width: 100vw;
+        width: 120vw;
     }
 
     #image{
@@ -387,6 +405,8 @@ input, textarea{
     }
 
     #projects{
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
     }
+
 }
