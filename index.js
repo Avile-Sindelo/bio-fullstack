@@ -3,6 +3,7 @@ import { engine } from 'express-handlebars';
 import bodyParser from 'body-parser';
 import pgPromise from 'pg-promise';
 import Database from './database.js';
+import Typed from 'typed.js';
 
 const app = express();
 
@@ -22,7 +23,7 @@ app.set('views', 'views');
 //Middleware config
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());     
+app.use(bodyParser.json()); 
 
 
 
@@ -30,9 +31,10 @@ app.use(bodyParser.json());
 app.get('/', async function(req, res){
     //Get the database details 
     console.log('All the Skills of the developer are as follows: ', await database.getAllSkills());
-    console.log('All Projects : ', await database.getAllProjects());
+    const myProjects = await database.getAllProjects();
+    const typedText = await database.getTypedText();
     //Render a view
-    res.render('index', {skills: await database.getAllSkills(), projects: await database.getAllProjects()});
+    res.render('index', {skills: await database.getAllSkills(), projects: myProjects.reverse(), typed: typedText});
 });
 
 let PORT = process.env.PORT || 8080;

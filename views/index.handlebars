@@ -29,7 +29,7 @@
     <div id="skills" class="fader"> 
         <div class="row">
             <div class="col-12">
-                <h1 id="my-skills-heading" class="hidden section-heading">My Skills</h1>
+                <h1 id="my-skills-heading" class="section-heading">My Skills</h1>
             </div>
         </div>
         
@@ -52,22 +52,22 @@
                 <!-- UI/UX -->
                 <div class="each-skill">
                     <label for="ui-ux">UI / UX</label>
-                    <progress class="progress" id="ui-ux" value="86" max="100"> 86% </progress>
+                    {{!-- <progress class="progress" id="ui-ux" value="86" max="100"> 86% </progress> --}}
                 </div>
                 <!-- Web -->
                 <div class="each-skill">
                     <label for="web-design">Web</label>
-                    <progress class="progress" id="web-design" value="80" max="100"> 80% </progress>
+                    {{!-- <progress class="progress" id="web-design" value="80" max="100"> 80% </progress> --}}
                 </div>
                 <!-- Logo -->
                 <div class="each-skill">
                     <label for="logo-design">Logo</label>
-                    <progress class="progress" id="logo-design" value="82" max="100"> 82% </progress>
+                    {{!-- <progress class="progress" id="logo-design" value="82" max="100"> 82% </progress> --}}
                 </div>
                 <!-- Figma -->
                 <div class="each-skill">
                     <label for="figma-design">Figma</label>
-                    <progress class="progress" id="figma-design" value="42" max="100"> 42% </progress>
+                    {{!-- <progress class="progress" id="figma-design" value="42" max="100"> 42% </progress> --}}
                 </div>
             </div>
         </div>
@@ -77,19 +77,19 @@
         <div class="col-6">
             <h3 class="edu-exp-heading"> Education </h3>
             <ul class="edu-exp-list">
-                <li class="list-item black-text">BSc Computer Science (WSU) -  in progress. </li>
+                <li class="list-item black-text">Agile Web Development (codeX) - 2023 </li>
                 <li class="list-item black-text">Self-taught  :-  W3Schools, freeCodeCamp, CS50 , Edureka, GeeksForGeeks, Tulesko learnings, Traversy.com, WebDevSimplified, The Coding Train (2019 - current)</li>
                 <li class="list-item"><a href="https://freecodecamp.org/Avile_Kimson_Sindelo">freeCodeCamp certification </a></li>
-                <li class="list-item"><a href="../public/documents/2023 AWD codeX Certificate Avile Sindelo.pdf" download="2023 AWD codeX Certification Avile Sindelo.pdf">codeX agile web development certification - download</a></li>
+                <li class="list-item"><a href="../public/documents/2023 AWD codeX Certificate Avile Sindelo.pdf" download="2023 AWD codeX Certification Avile Sindelo.pdf">codeX Agile Web Development certification - download</a></li>
             </ul>
         </div>
 
         <div class="col-6">
             <h3 class="edu-exp-heading "> Experience </h3>
             <ul class="edu-exp-list ">
-                <li class="black-text">CodeX intern : Feb/2023 - Current </li>
+                <li class="black-text">CodeX student : Feb/2023 - Dec/2023 </li>
                 <p style="font-size:80%; padding-top: 0;" class="blact-text">
-                    As an intern at CodeX, I plan small and medium scale software solutions on a Kanban board using the Thin-Slicing approach.</br>
+                    As a student at CodeX, I plan small and medium scale software solutions on a Kanban board using the Thin-Slicing approach.</br>
                     Upon plan approval by mentors, I build the solution using the HTML, CSS and JS.</br>
                     Constantly communicate with mentors on regular intervals, and its prioritized. </br>
                     Test the solution with MochaJS.</br>
@@ -106,6 +106,7 @@
             <div class=" row-display" >
                 {{#each projects}}
                     <div class="project-card col-3">
+                        <hr class="horizontal">
                         <h3 class="project-heading"> {{name}} </h3>
                         <img src={{image_url}}  alt="project 1" class="project-image">
                         <div class="project-description">
@@ -113,7 +114,7 @@
                                {{description}}
                                <a href={{url}}>Open project</a>
                             </p>
-                            <hr>
+                            <hr class="horizontal">
                         </div>
                     </div>
                 {{/each}}
@@ -189,3 +190,12 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#typed-element', {
+            strings: ['Software scientist,', 'Agile Web Developer,', 'JavaScript junkie,', 'Object-Oriented Programmer,', 'Technological literate,', 'Aeronautics enthusiast,', 'A good person as well!'],
+            typeSpeed: 150,
+            backDelay: 2000,
+            startDelay: 7500,
+            loop: true
+        });
+    </script>

@@ -34,6 +34,7 @@
     "express-handlebars": "^7.1.2",
     "mocha": "^10.2.0",
     "pg-promise": "^11.5.4",
-    "simple-css-grid": "^1.7.0"
+    "simple-css-grid": "^1.7.0",
+    "typed.js": "^2.1.0"
   }
 }

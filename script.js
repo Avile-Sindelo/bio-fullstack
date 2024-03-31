@@ -75,4 +75,4 @@ var typed = new Typed('#typed-element', {
     startDelay: 6000
   });
 
-  console.log(typed);
+  console.log('Typed input: ', typed);

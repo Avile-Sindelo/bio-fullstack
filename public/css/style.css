@@ -291,22 +291,6 @@ input, textarea{
     padding: 10% 2%;
 }
 
-.hidden{
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-    animation-duration: 3.5s;
-    animation-delay: 1s;
-}
-
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-   
-}
-
 .skillset{
     display: flex;
     flex-direction: column;
@@ -377,23 +361,11 @@ input, textarea{
 
     #intro{
         background-size: 100vh;
-        width: 120vw;
+        width: 100vw;
     }
 
-    #skills{
-        width: 120vw;
-    }
-    
-    #projects{
-        width: 120vw;
-    }
-
-    #contact{
-        width: 120vw;
-    }
-    
-    #about{
-        width: 120vw;
+    #skills, #projects, #contact, #about{
+        width: 110%;
     }
 
     #image{
