@@ -242,6 +242,7 @@ input, textarea{
 
 .technical-skills{
     font-family: 'Poppins', sans-serif;
+    text-shadow: .1px .2px beige;
 }
 
 
@@ -302,9 +303,21 @@ input, textarea{
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px dashed grey;
+    border: 1px dashed #fff;
     padding: 1em 2em;
+    margin: 1em 0;
+    background-color: #45969B;
+    width: 25%;
+    color: transparent;
+    text-align: center;
+    border-radius: 5px;
 }
+
+.skill-text{
+    color: #fff;
+    text-shadow: .9px .9px black;
+}
+
 #skills{
     background-color: #FF6B6B;
     width: 100%;
@@ -355,10 +368,10 @@ input, textarea{
 }
 
 @media screen AND (max-width: 760px){
-    #web-dev-span{
-        display: none;
-    }
 
+    #web-dev-span{
+        display:  none;
+    }
     #intro{
         background-size: 100vh;
         width: 100vw;
@@ -383,4 +396,8 @@ input, textarea{
         flex-wrap: wrap;
     }
 
+    .each-skill{
+        width: fit-content;
+        margin: 0.4em 1.4em;
+    }
 }
