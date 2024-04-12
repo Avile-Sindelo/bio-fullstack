@@ -243,6 +243,8 @@ input, textarea{
 .technical-skills{
     font-family: 'Caprasimo', sans-serif;
     text-shadow: .1px .2px beige;
+    color: grey;
+    letter-spacing: 1px;
 }
 
 
