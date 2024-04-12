@@ -57,8 +57,9 @@ app.post('/email', async function(req, res){
       
       errorFree(data)? emailjs.send(serviceID, templateID, data)
       .then(
-        (response) => {
+        async (response) => {
           console.log('SUCCESS!', response.status, response.text);
+          await database.addEmail(data.name, data.email, data.message);
         },
         (err) => {
           console.log('FAILED...', err);

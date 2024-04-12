@@ -11,10 +11,15 @@ export default function Database(db){
         return await db.manyOrNone('select * from projects');
     }
 
+    async function addEmail(name, email, message){
+        await db.none(`insert into email (customer_name, email_address, message) values ($1, $2, $3)`, [name, email, message]);
+    }
+
 
     return{
         getAllSkills,
         getTypedText,
-        getAllProjects
+        getAllProjects,
+        addEmail
     }
 }
