@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alegreya+Sans+SC&family=Caveat&family=Comfortaa:wght@300&family=Exo+2:wght@200&family=Gruppo&family=Handjet&family=Inconsolata:wght@500&family=Jersey+25&family=Merienda&family=Miltonian+Tattoo&family=Montserrat:ital@1&family=Playfair+Display&family=Poetsen+One&family=Poppins:wght@200&family=Protest+Revolution&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Rubik+Glitch+Pop&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alegreya+Sans+SC&family=Caprasimo&family=Caveat&family=Cinzel:wght@400..900&family=Comfortaa:wght@300&family=Exo+2:wght@200&family=Frijole&family=Gruppo&family=Handjet&family=Inconsolata:wght@500&family=Jersey+25&family=Londrina+Shadow&family=Merienda&family=Miltonian+Tattoo&family=Montserrat:ital@1&family=Playfair+Display&family=Poetsen+One&family=Poppins:wght@200&family=Protest+Revolution&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Rubik+Dirt&family=Rubik+Glitch+Pop&family=Rubik+Iso&family=Tilt+Prism&family=Ultra&display=swap');
 body{
     background-color: beige;
     color: #333;
@@ -121,7 +121,7 @@ input, textarea{
 }
 
 .section-heading{
-    font-family: 'Londrina Sketch', sans-serif;
+    font-family: 'Londrina Shadow', sans-serif;
     text-align: center;
     color: beige;
     text-shadow: 1px 1px 1px #333;
