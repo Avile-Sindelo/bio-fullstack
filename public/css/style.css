@@ -124,6 +124,7 @@ input, textarea{
     font-family: 'Londrina Shadow', sans-serif;
     text-align: center;
     color: beige;
+    letter-spacing: 5px;
     text-shadow: 1px 1px 1px #333;
 }
 
@@ -359,6 +360,7 @@ input, textarea{
 
 .list-item{
     color: #333;
+    font-family: 'Radio Canada Big', sans-serif;
 }
 
 .row-display{
@@ -367,6 +369,12 @@ input, textarea{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+#experience-text{
+    font-size: 85%;
+    font-weight: bold;
+    padding-top: 0;
 }
 
 
