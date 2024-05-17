@@ -241,6 +241,7 @@ input, textarea{
 
 .project-text{
     font-size: 85%;
+    font-weight: bolder;
 }
 
 #project-header{
