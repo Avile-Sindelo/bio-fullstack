@@ -10,7 +10,7 @@ const app = express();
 
 //Database connection
 //db string 
-const connectionString = process.env.DATABASE_URL || '//postgres:[#ef4-ZvrRPkBANR]@db.jcanvdjfxeoefubnggst.supabase.co:5432/postgres?ssl=true';
+const connectionString = process.env.DATABASE_URL || 'postgres:[#ef4-ZvrRPkBANR]@db.jcanvdjfxeoefubnggst.supabase.co:5432/postgres?ssl=true';
 const postgresP = pgPromise();
 const db = postgresP(connectionString);
 console.log('The database instance :', db);
