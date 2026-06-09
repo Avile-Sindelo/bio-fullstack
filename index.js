@@ -1,4 +1,5 @@
 import express from 'express';
+import 'dotenv/config'; 
 import { engine } from 'express-handlebars';
 import bodyParser from 'body-parser';
 import pgPromise from 'pg-promise';
