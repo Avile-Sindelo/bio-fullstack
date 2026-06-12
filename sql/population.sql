@@ -74,7 +74,7 @@ INSERT INTO projects (name, image_url, description, url) VALUES('Waiter manageme
 
 -- The Yo-Kulca project
 INSERT INTO projects (name, image_url, description, url) VALUES('Yo-Kulca clothing brand website', 
-'https://github.com/Avile-Sindelo/bio-fullstack/blob/main/public/images/project2.png?raw=true',
+'https://github.com/Avile-Sindelo/bio-fullstack/blob/main/public/images/project3.png?raw=true',
 'This is an introductory website for a local clothing brand called "Yo-Kulca" that is based in Mthatha in the Eastern Cape.',
 'http://yokulca.freevar.com/');
 

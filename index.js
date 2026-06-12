@@ -10,11 +10,11 @@ import emailjs from '@emailjs/nodejs'
 const app = express();
 
 //Database connection
-//db string 
-const connectionString = process.env.DATABASE_URL || 'postgresql://postgres:#ef4-ZvrRPkBANR@db.jcanvdjfxeoefubnggst.supabase.co:5432/postgres?ssl=true';
+//db string
+const password = encodeURIComponent(process.env.DATABASE_PASSWORD); 
+const connectionString =  `postgresql://postgres.agylgozlxehqoiqurijp:${password}@aws-0-eu-west-1.pooler.supabase.com:5432/postgres`;
 const postgresP = pgPromise();
 const db = postgresP(connectionString);
-console.log('The database instance :', db);
 
 const database = Database(db);
 
